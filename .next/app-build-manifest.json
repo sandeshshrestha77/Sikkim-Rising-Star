@@ -1,5 +1,15 @@
 {
   "pages": {
+    "/events/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/events/page.js"
+    ],
+    "/register/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/register/page.js"
+    ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -11,21 +21,6 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/register/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/register/page.js"
-    ],
-    "/events/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/events/page.js"
-    ],
-    "/events/rising-star-2022/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/events/rising-star-2022/page.js"
-    ],
     "/events/rising-star-2024/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -35,6 +30,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/events/rising-star-2021/page.js"
+    ],
+    "/events/rising-star-2022/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/events/rising-star-2022/page.js"
     ],
     "/events/rising-star-2023/page": [
       "static/chunks/webpack.js",

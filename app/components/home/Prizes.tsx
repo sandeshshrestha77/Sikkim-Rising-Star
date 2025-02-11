@@ -51,7 +51,7 @@ export default function Prizes() {
               </div>
               
               <h3 className="text-2xl font-display font-bold text-white mb-2">{prize.title}</h3>
-              <div className="text-3xl font-bold gradient-text mb-6">{prize.amount}</div>
+              <div className="text-3xl font-bold text-purple-500 mb-6">{prize.amount}</div>
               
               <ul className="space-y-3 text-left">
                 {prize.benefits.map((benefit) => (
