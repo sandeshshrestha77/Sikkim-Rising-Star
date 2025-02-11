@@ -1,4 +1,7 @@
 {
   "/not-found": "app/not-found.js",
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/events/page": "app/events/page.js",
+  "/events/rising-star-2024/page": "app/events/rising-star-2024/page.js",
+  "/events/rising-star-2023/page": "app/events/rising-star-2023/page.js"
 }
