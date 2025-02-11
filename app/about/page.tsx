@@ -25,7 +25,7 @@ export default function AboutPage() {
         </div>
 
         {/* Stats Section */}
-        <Section className="mb-24">
+        <Section className="mb-24" title={''}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((stat) => {
               const Icon = stat.icon;
