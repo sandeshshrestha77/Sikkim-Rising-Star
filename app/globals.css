@@ -24,16 +24,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link {
-  @apply text-gray-300 hover:text-white transition-colors relative after:absolute after:left-0 after:-bottom-1
-         after:w-0 after:h-0.5 after:bg-purple-500 after:transition-all hover:after:w-full font-medium tracking-wide;
+  @apply text-gray-300 hover:text-white transition-colors relative font-medium;
 }
 
 .button {
-  @apply bg-gradient-to-r from-purple-900/50 to-purple-800/50 text-white px-8 py-3 rounded-lg 
-         hover:from-purple-800/50 hover:to-purple-700/50 transition-all backdrop-blur-sm 
-         border border-purple-500/20 hover:border-purple-500/40 hover:scale-105 
-         active:scale-95 font-medium tracking-wide inline-flex items-center gap-2
-         shadow-lg hover:shadow-purple-500/20;
+  @apply bg-white text-black px-6 py-2.5 rounded-lg 
+         transition-all font-medium tracking-wide inline-flex items-center gap-2
+         hover:bg-gray-100 active:scale-95;
 }
 
 .form-input {
