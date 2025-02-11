@@ -1,5 +1,6 @@
 import { TrophyIcon, SparklesIcon, StarIcon } from '@heroicons/react/24/outline';
 import Section from '../ui/Section';
+import Card from '../ui/Card';
 
 const prizes = [
   {
@@ -44,7 +45,7 @@ export default function Prizes() {
         {prizes.map((prize) => {
           const Icon = prize.icon;
           return (
-            <div key={prize.title} className="card p-8 text-center group">
+            <Card key={prize.title} className="text-center">
               <div className="mb-6">
                 <Icon className="w-12 h-12 text-purple-400 mx-auto group-hover:scale-110 transition-transform" />
               </div>
@@ -60,7 +61,7 @@ export default function Prizes() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </Card>
           );
         })}
       </div>

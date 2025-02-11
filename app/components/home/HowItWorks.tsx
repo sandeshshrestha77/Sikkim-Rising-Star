@@ -1,5 +1,6 @@
 import { CheckCircleIcon } from '@heroicons/react/24/outline';
 import Section from '../ui/Section';
+import Card from '../ui/Card';
 
 const steps = [
   {
@@ -49,7 +50,7 @@ export default function HowItWorks() {
     <Section title="How It Works" className="mb-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {steps.map((step, index) => (
-          <div key={step.title} className="card p-8 relative group">
+          <Card key={step.title} className="relative">
             <div className="absolute -top-4 -left-4 w-8 h-8 bg-purple-500/10 rounded-full flex items-center justify-center">
               <span className="text-purple-400 font-bold">{index + 1}</span>
             </div>
@@ -65,7 +66,7 @@ export default function HowItWorks() {
                 </li>
               ))}
             </ul>
-          </div>
+          </Card>
         ))}
       </div>
     </Section>
