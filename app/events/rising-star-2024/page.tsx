@@ -1,5 +1,5 @@
 
-import { TrophyIcon, CalendarIcon, MapPinIcon, ArrowRightIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
+import { TrophyIcon, CalendarIcon, MapPinIcon, ArrowRightIcon, CheckCircleIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 import Card from '../../components/ui/Card';
 import Link from 'next/link';
 
