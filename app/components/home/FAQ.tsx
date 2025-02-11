@@ -56,12 +56,12 @@ export default function FAQ() {
             {category.questions.map((faq) => (
               <Disclosure key={faq.question}>
                 {({ open }) => (
-                  <div className="border border-purple-500/30 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
-                    <Disclosure.Button className="w-full px-6 py-4 flex justify-between items-center bg-purple-800/50 hover:bg-purple-800/70 transition duration-300">
-                      <span className="text-lg font-medium text-white">{faq.question}</span>
-                      <ChevronDownIcon className={`w-6 h-6 text-purple-400 transition-transform duration-300 ${open ? 'rotate-180' : ''}`} />
+                  <div className="mb-4">
+                    <Disclosure.Button className="w-full px-8 py-5 flex justify-between items-center bg-gradient-to-r from-purple-900/50 to-purple-800/50 rounded-xl hover:from-purple-800/50 hover:to-purple-700/50 transition-all duration-300 shadow-lg hover:shadow-purple-500/20">
+                      <span className="text-lg font-semibold text-white">{faq.question}</span>
+                      <ChevronDownIcon className={`w-5 h-5 text-purple-300 transform transition-all duration-300 ${open ? 'rotate-180' : ''}`} />
                     </Disclosure.Button>
-                    <Disclosure.Panel className="px-6 py-4 text-gray-300 bg-purple-900/30 border-t border-purple-500/30 leading-relaxed">
+                    <Disclosure.Panel className="px-8 py-6 mt-2 bg-purple-900/20 rounded-xl text-gray-200 leading-relaxed border border-purple-500/10">
                       {faq.answer}
                     </Disclosure.Panel>
                   </div>
