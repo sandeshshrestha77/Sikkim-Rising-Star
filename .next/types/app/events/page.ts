@@ -1,4 +1,4 @@
-// File: /home/runner/workspace/app/events/page.tsx
+// File: D:\002_coding\Sikkim Rising Star\app\events\page.tsx
 import * as entry from '../../../../app/events/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
