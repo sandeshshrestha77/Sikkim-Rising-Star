@@ -1,8 +1,8 @@
-// File: /home/runner/workspace/app/events/rising-star-2022/page.tsx
-import * as entry from '../../../../../app/events/rising-star-2022/page.js'
+// File: /home/runner/workspace/app/events/page.tsx
+import * as entry from '../../../../app/events/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../../app/events/rising-star-2022/page.js')
+type TEntry = typeof import('../../../../app/events/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{
