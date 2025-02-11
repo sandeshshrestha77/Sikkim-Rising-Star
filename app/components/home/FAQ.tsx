@@ -56,12 +56,12 @@ export default function FAQ() {
             {category.questions.map((faq) => (
               <Disclosure key={faq.question}>
                 {({ open }) => (
-                  <div className="mb-4">
-                    <Disclosure.Button className="w-full px-8 py-5 flex justify-between items-center bg-gradient-to-r from-purple-900/50 to-purple-800/50 rounded-xl hover:from-purple-800/50 hover:to-purple-700/50 transition-all duration-300 shadow-lg hover:shadow-purple-500/20">
-                      <span className="text-lg font-semibold text-white">{faq.question}</span>
-                      <ChevronDownIcon className={`w-5 h-5 text-purple-300 transform transition-all duration-300 ${open ? 'rotate-180' : ''}`} />
+                  <div className="mb-4 group hover:scale-[1.01] transition-all duration-300">
+                    <Disclosure.Button className="w-full px-8 py-5 flex justify-between items-center bg-gradient-to-r from-purple-900/50 via-purple-800/50 to-purple-900/50 rounded-xl hover:from-purple-800/50 hover:via-purple-700/50 hover:to-purple-800/50 transition-all duration-300 shadow-lg hover:shadow-purple-500/20 backdrop-blur-sm">
+                      <span className="text-lg font-semibold text-white group-hover:text-purple-200 transition-colors">{faq.question}</span>
+                      <ChevronDownIcon className={`w-5 h-5 text-purple-400 transform transition-all duration-300 ${open ? 'rotate-180 text-purple-300' : ''}`} />
                     </Disclosure.Button>
-                    <Disclosure.Panel className="px-8 py-6 mt-2 bg-purple-900/20 rounded-xl text-gray-200 leading-relaxed border border-purple-500/10">
+                    <Disclosure.Panel className="px-8 py-6 mt-2 bg-purple-900/30 rounded-xl text-gray-200 leading-relaxed border border-purple-500/20 backdrop-blur-sm">
                       {faq.answer}
                     </Disclosure.Panel>
                   </div>
