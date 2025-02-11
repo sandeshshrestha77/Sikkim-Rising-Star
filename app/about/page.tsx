@@ -116,6 +116,7 @@ export default function AboutPage() {
               <p>Phone: +91 XXXXX XXXXX</p>
               <p>Location: Gangtok, Sikkim</p>
             </div>
+            
           </Card>
         </Section>
       </div>
