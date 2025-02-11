@@ -1,6 +1,4 @@
-
 "use client";
-
 import { useEffect, useRef } from "react";
 import Section from "../ui/Section";
 
@@ -24,7 +22,7 @@ export default function Sponsors() {
     const clientWidth = scrollContainer.clientWidth;
     let scrollPos = 0;
     let direction = 1;
-    const speed = 1;
+    const speed = 1; // Adjust speed as needed
 
     const animate = () => {
       if (!scrollContainer) return;
@@ -32,6 +30,7 @@ export default function Sponsors() {
       scrollPos += speed * direction;
       scrollContainer.scrollLeft = scrollPos;
 
+      // Reverse direction when reaching the edges
       if (scrollPos >= scrollWidth - clientWidth) {
         direction = -1;
       } else if (scrollPos <= 0) {
@@ -42,6 +41,7 @@ export default function Sponsors() {
     };
 
     const animationFrame = requestAnimationFrame(animate);
+
     return () => cancelAnimationFrame(animationFrame);
   }, []);
 
@@ -52,6 +52,7 @@ export default function Sponsors() {
       aria-labelledby="sponsors-section"
     >
       <div className="relative overflow-hidden">
+        {/* Scrollable container */}
         <div
           ref={scrollRef}
           className="flex gap-8 overflow-x-hidden py-8 px-4 scroll-smooth"
@@ -68,7 +69,7 @@ export default function Sponsors() {
                 src={sponsor.url}
                 alt={`Logo of ${sponsor.name}`}
                 className="max-w-full max-h-full opacity-75 group-hover:opacity-100 transition-opacity"
-                loading="lazy"
+                loading="lazy" // Lazy load images for performance
               />
             </div>
           ))}
