@@ -12,29 +12,27 @@ export default function Contact() {
   return (
     <Section title="Contact & Social Media" className="mb-24">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="bg-gradient-to-r from-purple-900/50 to-purple-800/50 rounded-xl p-8 shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
+        <div className="card p-8">
           <h3 className="text-2xl font-display font-bold text-white mb-6">Get in Touch</h3>
           
-          <div className="space-y-5">
-            <a 
-              href="mailto:contact@sikkimrisingstar.com" 
-              className="flex items-center gap-4 p-4 bg-purple-900/20 rounded-lg border border-purple-500/10 hover:border-purple-500/30 transition-all duration-300"
-            >
-              <EnvelopeIcon className="w-6 h-6 text-purple-400" />
-              <span className="text-gray-200 hover:text-white transition-colors">contact@sikkimrisingstar.com</span>
-            </a>
+          <div className="space-y-4">
+            <div className="flex items-center gap-3">
+              <EnvelopeIcon className="w-5 h-5 text-purple-400" />
+              <a href="mailto:contact@sikkimrisingstar.com" className="text-gray-300 hover:text-white transition-colors">
+                contact@sikkimrisingstar.com
+              </a>
+            </div>
             
-            <a 
-              href="tel:+919876543210" 
-              className="flex items-center gap-4 p-4 bg-purple-900/20 rounded-lg border border-purple-500/10 hover:border-purple-500/30 transition-all duration-300"
-            >
-              <PhoneIcon className="w-6 h-6 text-purple-400" />
-              <span className="text-gray-200 hover:text-white transition-colors">+91 98765 43210</span>
-            </a>
+            <div className="flex items-center gap-3">
+              <PhoneIcon className="w-5 h-5 text-purple-400" />
+              <a href="tel:+919876543210" className="text-gray-300 hover:text-white transition-colors">
+                +91 98765 43210
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-purple-900/50 to-purple-800/50 rounded-xl p-8 shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
+        <div className="card p-8">
           <h3 className="text-2xl font-display font-bold text-white mb-6">Follow Us</h3>
           
           <div className="grid grid-cols-2 gap-4">
@@ -42,9 +40,9 @@ export default function Contact() {
               <a
                 key={link.name}
                 href={link.url}
-                className="p-4 bg-purple-900/20 rounded-lg border border-purple-500/10 hover:border-purple-500/30 text-center transition-all duration-300"
+                className="card p-4 text-center hover:bg-purple-500/5 transition-colors"
               >
-                <span className="text-gray-200 hover:text-white transition-colors font-medium">{link.name}</span>
+                <span className="text-gray-300 hover:text-white transition-colors">{link.name}</span>
               </a>
             ))}
           </div>
