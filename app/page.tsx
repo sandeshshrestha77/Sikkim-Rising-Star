@@ -6,6 +6,7 @@ import Prizes from './components/home/Prizes';
 import Sponsors from './components/home/Sponsors';
 import FAQ from './components/home/FAQ';
 import Contact from './components/home/Contact';
+import CTA from './components/home/CTA';
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Categories />
         <HowItWorks />
         <Prizes />
+        <CTA />
         <Sponsors />
         <FAQ />
         <Contact />

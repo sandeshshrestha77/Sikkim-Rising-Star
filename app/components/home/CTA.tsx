@@ -1,46 +1,44 @@
-import { ArrowRightIcon, CalendarIcon, DocumentCheckIcon } from '@heroicons/react/24/outline';
+
+import { ArrowRightIcon, SparklesIcon, StarIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
 export default function CTA() {
   return (
-    <section className="mb-24">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="card p-8 backdrop-blur-md relative overflow-hidden group">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl group-hover:bg-purple-500/10 transition-colors" />
-          
-          <div className="relative">
-            <div className="p-3 bg-purple-500/10 rounded-xl w-fit mb-6">
-              <CalendarIcon className="w-8 h-8 text-purple-400" />
-            </div>
-            
-            <h3 className="text-2xl font-display font-bold text-white mb-4">Register for 2024</h3>
-            <p className="text-gray-300 leading-relaxed mb-8">
-              Take the first step towards your dreams. Early registrations get exclusive mentorship opportunities.
-            </p>
-            
-            <Link href="/register" className="button">
-              Register Now
-              <ArrowRightIcon className="w-5 h-5" />
-            </Link>
+    <section className="mb-24 relative">
+      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-3xl blur-3xl" />
+      <div className="card p-12 relative overflow-hidden text-center">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl" />
+        
+        <div className="relative">
+          <div className="flex justify-center mb-6">
+            <SparklesIcon className="w-12 h-12 text-purple-400 animate-pulse" />
           </div>
-        </div>
-
-        <div className="card p-8 backdrop-blur-md relative overflow-hidden group">
-          <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/5 rounded-full blur-3xl group-hover:bg-purple-500/10 transition-colors" />
           
-          <div className="relative">
-            <div className="p-3 bg-purple-500/10 rounded-xl w-fit mb-6">
-              <DocumentCheckIcon className="w-8 h-8 text-purple-400" />
-            </div>
+          <h2 className="text-4xl font-display font-bold text-white mb-6">
+            Your Journey to Stardom Begins Here
+          </h2>
+          
+          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Join Sikkim Rising Star 2024 and showcase your talent to thousands. 
+            Early registrations get exclusive mentorship opportunities!
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link 
+              href="/register" 
+              className="button text-lg px-8 py-4 group hover:scale-105 hover:shadow-purple-500/25"
+            >
+              Register Now
+              <ArrowRightIcon className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </Link>
             
-            <h3 className="text-2xl font-display font-bold text-white mb-4">Download Information Pack</h3>
-            <p className="text-gray-300 leading-relaxed mb-8">
-              Get detailed information about categories, rules, judging criteria, and prizes.
-            </p>
-            
-            <Link href="#download" className="button">
-              Download PDF
-              <ArrowRightIcon className="w-5 h-5" />
+            <Link 
+              href="/events/rising-star-2024" 
+              className="text-gray-300 hover:text-white transition-colors flex items-center gap-2"
+            >
+              Learn More
+              <StarIcon className="w-4 h-4" />
             </Link>
           </div>
         </div>
