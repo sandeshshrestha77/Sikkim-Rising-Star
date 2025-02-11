@@ -1,4 +1,6 @@
 
+"use client";
+
 import { useEffect, useRef } from 'react';
 import Section from '../ui/Section';
 
@@ -46,11 +48,9 @@ export default function Sponsors() {
   return (
     <Section title="Our Sponsors" className="mb-24">
       <div className="relative overflow-hidden">
-        {/* Gradient Overlays */}
         <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-black to-transparent z-10" />
         <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-black to-transparent z-10" />
         
-        {/* Carousel Container */}
         <div 
           ref={scrollRef}
           className="flex gap-8 overflow-x-hidden py-8 px-4"
