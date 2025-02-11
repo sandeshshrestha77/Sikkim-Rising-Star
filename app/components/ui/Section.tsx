@@ -1,17 +1,20 @@
+
 interface SectionProps {
   title: string;
-  children: React.ReactNode;
   className?: string;
+  children: React.ReactNode;
 }
 
-export default function Section({ title, children, className = "" }: SectionProps) {
+export default function Section({ title, className = "", children }: SectionProps) {
   return (
-    <div className={`mb-16 ${className}`}>
-      <h2 className="text-3xl font-bold text-white mb-8 relative">
-        <span className="relative z-10">{title}</span>
-        <div className="absolute -bottom-2 left-0 w-12 h-1 bg-purple-500/50" />
-      </h2>
+    <section className={`py-16 ${className}`}>
+      <div className="relative mb-16 flex justify-center">
+        <h2 className="text-4xl font-bold text-white relative z-10">
+          {title}
+          <div className="absolute -bottom-3 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent" />
+        </h2>
+      </div>
       {children}
-    </div>
+    </section>
   );
 }
