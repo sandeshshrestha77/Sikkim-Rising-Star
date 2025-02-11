@@ -1,4 +1,4 @@
-// File: D:\002_coding\Sikkim Rising Star\app\layout.tsx
+// File: /home/runner/workspace/app/layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
