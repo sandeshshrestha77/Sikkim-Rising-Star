@@ -35,7 +35,6 @@ export default function AboutPage() {
                   <div className="text-3xl font-bold text-white mb-2">{stat.value}</div>
                   <div className="text-gray-300">{stat.label}</div>
                 </Card>
-
               );
             })}
           </div>
@@ -110,30 +109,12 @@ export default function AboutPage() {
         {/* Contact Section */}
         <Section title="Get in Touch" className="mb-24">
           <Card className="p-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
-                <div className="space-y-4 text-gray-300">
-                  <p>Have questions about the competition or want to become a sponsor?</p>
-                  <p>Email: contact@sikkimrisingstar.com</p>
-                  <p>Phone: +91 XXXXX XXXXX</p>
-                  <p>Location: Gangtok, Sikkim</p>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-6">Follow Us</h3>
-                <div className="flex gap-4">
-                  {['Facebook', 'Instagram', 'Twitter', 'YouTube'].map((social) => (
-                    <a
-                      key={social}
-                      href="#"
-                      className="px-4 py-2 bg-purple-500/10 rounded-lg text-gray-300 hover:bg-purple-500/20 transition-colors"
-                    >
-                      {social}
-                    </a>
-                  ))}
-                </div>
-              </div>
+            <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
+            <div className="space-y-4 text-gray-300">
+              <p>Have questions about the competition or want to become a sponsor?</p>
+              <p>Email: contact@sikkimrisingstar.com</p>
+              <p>Phone: +91 XXXXX XXXXX</p>
+              <p>Location: Gangtok, Sikkim</p>
             </div>
           </Card>
         </Section>
