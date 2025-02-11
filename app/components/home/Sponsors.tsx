@@ -1,4 +1,6 @@
+
 import Section from '../ui/Section';
+import Card from '../ui/Card';
 
 const sponsors = [
   {
@@ -24,16 +26,16 @@ export default function Sponsors() {
       <div className="space-y-12">
         {sponsors.map((category) => (
           <div key={category.category}>
-            <h3 className="text-xl font-display font-bold text-white mb-8">{category.category}</h3>
+            <h3 className="text-xl font-bold text-white mb-8">{category.category}</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {category.logos.map((logo) => (
-                <div key={logo.name} className="card p-6 flex items-center justify-center group">
+                <Card key={logo.name} className="p-6 flex items-center justify-center group">
                   <img
                     src={logo.url}
                     alt={logo.name}
                     className="opacity-75 group-hover:opacity-100 transition-opacity"
                   />
-                </div>
+                </Card>
               ))}
             </div>
           </div>
