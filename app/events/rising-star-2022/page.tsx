@@ -1,5 +1,6 @@
 import { TrophyIcon, UserGroupIcon, PhotoIcon, NewspaperIcon } from '@heroicons/react/24/outline';
 import Card from '../../components/ui/Card';
+import Image from 'next/image';
 
 const eventDetails = {
   title: "Sikkim Rising Star 2022",
@@ -84,10 +85,12 @@ export default function RisingStar2022() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="relative h-96 rounded-2xl overflow-hidden mb-16">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=2070"
             alt="Rising Star 2022"
-            className="w-full h-full object-cover"
+            layout="fill"
+            objectFit="cover"
+            priority
           />
           <div className="absolute bottom-0 left-0 right-0 p-8">
             <h1 className="text-5xl font-bold text-white mb-4 font-display tracking-tight">{eventDetails.title}</h1>
@@ -136,10 +139,12 @@ export default function RisingStar2022() {
                   </div>
                   
                   <div className="mb-6">
-                    <img 
-                      src={winner.image} 
-                      alt={winner.name} 
-                      className="w-24 h-24 rounded-full border-2 border-purple-500/20 object-cover"
+                    <Image
+                      src={winner.image}
+                      alt={winner.name}
+                      width={96}
+                      height={96}
+                      className="rounded-full border-2 border-purple-500/20 object-cover"
                     />
                   </div>
                   
@@ -184,10 +189,12 @@ export default function RisingStar2022() {
               {eventDetails.gallery.map((photo) => (
                 <Card key={photo.url} className="overflow-hidden group">
                   <div className="relative h-64">
-                    <img
+                    <Image
                       src={photo.url}
                       alt={photo.caption}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      layout="fill"
+                      objectFit="cover"
+                      className="group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute bottom-4 left-4 text-white">{photo.caption}</div>
                   </div>

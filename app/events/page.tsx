@@ -1,6 +1,7 @@
-import { CalendarIcon, MapPinIcon, UserGroupIcon, TrophyIcon } from '@heroicons/react/24/outline';
+import { CalendarIcon, MapPinIcon, TrophyIcon } from '@heroicons/react/24/outline';
 import Card from '../components/ui/Card';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const currentEvents = [
   {
@@ -59,7 +60,7 @@ export default function EventsPage() {
             Our Events
           </h1>
           <p className="text-gray-300 text-xl max-w-3xl mx-auto leading-relaxed">
-            From humble beginnings to national recognition, discover the journey of Sikkim's biggest talent hunt competition
+            From humble beginnings to national recognition, discover the journey of Sikkim&apos;s biggest talent hunt competition
           </p>
         </div>
 
@@ -69,10 +70,12 @@ export default function EventsPage() {
             <Link href={`/events/${event.slug}`} key={event.slug}>
               <Card className="group relative overflow-hidden">
                 <div className="absolute inset-0">
-                  <img
+                  <Image
                     src={event.image}
                     alt={event.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                    layout="fill"
+                    objectFit="cover"
+                    className="group-hover:scale-105 transition-all duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/90" />
                 </div>
@@ -127,10 +130,12 @@ export default function EventsPage() {
               <Link href={`/events/${event.slug}`} key={event.slug}>
                 <Card className="group overflow-hidden h-[32rem] relative">
                   <div className="absolute inset-0">
-                    <img
+                    <Image
                       src={event.image}
                       alt={event.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-all duration-700"
+                      layout="fill"
+                      objectFit="cover"
+                      className="group-hover:scale-105 transition-all duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black" />
                   </div>

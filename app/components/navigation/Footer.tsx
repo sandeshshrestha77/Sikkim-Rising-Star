@@ -42,8 +42,8 @@ export default function Footer() {
               Sikkim Rising Star
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Sikkim's Premier Talent Hunt Competition, discovering extraordinary talents since 2018.
-            </p>
+  Sikkim&apos;s Premier Talent Hunt Competition, discovering extraordinary talents since 2018.
+</p>
             <div className="space-y-2">
               <a
                 href="mailto:contact@sikkimrisingstar.com"

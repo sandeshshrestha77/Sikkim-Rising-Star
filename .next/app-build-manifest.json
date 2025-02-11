@@ -1,45 +1,79 @@
 {
   "pages": {
-    "/events/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/events/page.js"
-    ],
-    "/register/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/register/page.js"
-    ],
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+    "/_not-found": [
+      "static/chunks/webpack-afda435b60e89e3f.js",
+      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
+      "static/chunks/864-72f91ca20beb1d45.js",
+      "static/chunks/main-app-86a131c6c5f7874a.js",
+      "static/chunks/app/_not-found-e4194793e8c686cb.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-afda435b60e89e3f.js",
+      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
+      "static/chunks/864-72f91ca20beb1d45.js",
+      "static/chunks/main-app-86a131c6c5f7874a.js",
+      "static/chunks/724-fa79a9dc174e14c9.js",
+      "static/css/c905b26a4ca80b49.css",
+      "static/chunks/app/layout-4c92e8c8d23fdf00.js"
     ],
-    "/events/rising-star-2024/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/events/rising-star-2024/page.js"
+    "/page": [
+      "static/chunks/webpack-afda435b60e89e3f.js",
+      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
+      "static/chunks/864-72f91ca20beb1d45.js",
+      "static/chunks/main-app-86a131c6c5f7874a.js",
+      "static/chunks/724-fa79a9dc174e14c9.js",
+      "static/chunks/app/page-fe02eb6c5fcc9e05.js"
+    ],
+    "/about/page": [
+      "static/chunks/webpack-afda435b60e89e3f.js",
+      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
+      "static/chunks/864-72f91ca20beb1d45.js",
+      "static/chunks/main-app-86a131c6c5f7874a.js",
+      "static/chunks/app/about/page-4369d56233232cbb.js"
+    ],
+    "/events/page": [
+      "static/chunks/webpack-afda435b60e89e3f.js",
+      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
+      "static/chunks/864-72f91ca20beb1d45.js",
+      "static/chunks/main-app-86a131c6c5f7874a.js",
+      "static/chunks/724-fa79a9dc174e14c9.js",
+      "static/chunks/app/events/page-c681e9954c7f6bef.js"
+    ],
+    "/register/page": [
+      "static/chunks/webpack-afda435b60e89e3f.js",
+      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
+      "static/chunks/864-72f91ca20beb1d45.js",
+      "static/chunks/main-app-86a131c6c5f7874a.js",
+      "static/chunks/app/register/page-00fef155463d5b51.js"
     ],
     "/events/rising-star-2021/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/events/rising-star-2021/page.js"
-    ],
-    "/events/rising-star-2022/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/events/rising-star-2022/page.js"
+      "static/chunks/webpack-afda435b60e89e3f.js",
+      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
+      "static/chunks/864-72f91ca20beb1d45.js",
+      "static/chunks/main-app-86a131c6c5f7874a.js",
+      "static/chunks/app/events/rising-star-2021/page-4454b4d92054363e.js"
     ],
     "/events/rising-star-2023/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/events/rising-star-2023/page.js"
+      "static/chunks/webpack-afda435b60e89e3f.js",
+      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
+      "static/chunks/864-72f91ca20beb1d45.js",
+      "static/chunks/main-app-86a131c6c5f7874a.js",
+      "static/chunks/app/events/rising-star-2023/page-b2ba5ae1c887ba54.js"
+    ],
+    "/events/rising-star-2024/page": [
+      "static/chunks/webpack-afda435b60e89e3f.js",
+      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
+      "static/chunks/864-72f91ca20beb1d45.js",
+      "static/chunks/main-app-86a131c6c5f7874a.js",
+      "static/chunks/724-fa79a9dc174e14c9.js",
+      "static/chunks/app/events/rising-star-2024/page-e286465b4d00083a.js"
+    ],
+    "/events/rising-star-2022/page": [
+      "static/chunks/webpack-afda435b60e89e3f.js",
+      "static/chunks/fd9d1056-01c0efb178ae4adf.js",
+      "static/chunks/864-72f91ca20beb1d45.js",
+      "static/chunks/main-app-86a131c6c5f7874a.js",
+      "static/chunks/app/events/rising-star-2022/page-33fa4a87dcea5b1b.js"
     ]
   }
 }

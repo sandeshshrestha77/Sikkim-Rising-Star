@@ -19,8 +19,8 @@ export default function AboutPage() {
           <div className="relative text-center py-16 px-4">
             <h1 className="text-6xl font-bold text-white mb-6 font-display">Discover Your Spotlight</h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Join Sikkim's most prestigious talent hunt competition and become part of our growing legacy of stars.
-            </p>
+  Join Sikkim&apos;s most prestigious talent hunt competition and become part of our growing legacy of stars.
+</p>
           </div>
         </div>
 
@@ -35,6 +35,7 @@ export default function AboutPage() {
                   <div className="text-3xl font-bold text-white mb-2">{stat.value}</div>
                   <div className="text-gray-300">{stat.label}</div>
                 </Card>
+
               );
             })}
           </div>

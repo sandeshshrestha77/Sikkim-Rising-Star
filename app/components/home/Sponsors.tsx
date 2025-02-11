@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import Section from "../ui/Section";
+import Image from "next/image"; // Import Image from Next.js
 
 const sponsors = [
   { name: "Company 1", url: "https://placeholder.co/200x80" },
@@ -65,10 +66,12 @@ export default function Sponsors() {
               className="flex-shrink-0 w-48 h-24 bg-purple-900/30 rounded-lg border border-purple-500/20 backdrop-blur-sm p-4 flex items-center justify-center group hover:border-purple-500/40 transition-all duration-300"
               role="listitem"
             >
-              <img
+              <Image
                 src={sponsor.url}
                 alt={`Logo of ${sponsor.name}`}
                 className="max-w-full max-h-full opacity-75 group-hover:opacity-100 transition-opacity"
+                width={200} // Specify width and height for the Image component
+                height={80}
                 loading="lazy" // Lazy load images for performance
               />
             </div>

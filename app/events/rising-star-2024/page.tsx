@@ -1,7 +1,7 @@
-
 import { TrophyIcon, CalendarIcon, MapPinIcon, ArrowRightIcon, CheckCircleIcon, UserGroupIcon } from '@heroicons/react/24/outline';
 import Card from '../../components/ui/Card';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const eventDetails = {
   title: "Sikkim Rising Star 2024",
@@ -101,10 +101,11 @@ export default function RisingStar2024() {
       {/* Hero Section */}
       <div className="relative h-[70vh]">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?auto=format&fit=crop&q=80"
             alt="Rising Star 2024"
-            className="w-full h-full object-cover"
+            layout="fill"
+            objectFit="cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
         </div>
