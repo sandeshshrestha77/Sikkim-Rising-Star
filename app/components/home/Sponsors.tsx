@@ -54,11 +54,11 @@ export default function Sponsors() {
       <div className="relative overflow-hidden">
         {/* Gradient overlays for smooth visual transition */}
         <div
-          className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none"
+          className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-black via-black/80 to-transparent z-10 pointer-events-none"
           aria-hidden="true"
         />
         <div
-          className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none"
+          className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-black via-black/80 to-transparent z-10 pointer-events-none"
           aria-hidden="true"
         />
 
