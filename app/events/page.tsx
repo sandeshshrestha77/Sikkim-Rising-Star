@@ -63,7 +63,6 @@ export default function EventsPage() {
             From humble beginnings to national recognition, discover the journey of Sikkim&apos;s biggest talent hunt competition
           </p>
         </div>
-
         {/* Current Season - Featured */}
         <div className="mb-24">
           {currentEvents.map((event) => (
@@ -73,22 +72,20 @@ export default function EventsPage() {
                   <Image
                     src={event.image}
                     alt={event.title}
-                    layout="fill"
-                    objectFit="cover"
-                    className="group-hover:scale-105 transition-all duration-700"
+                    fill // Replaces layout="fill"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Add sizes prop
+                    priority // Add priority prop for LCP
+                    className="group-hover:scale-105 transition-all duration-700 object-cover" // Use CSS for object-fit
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/90" />
                 </div>
-
                 <div className="relative p-12 flex flex-col items-center text-center">
                   <span className="px-6 py-2 bg-purple-500 text-white rounded-full text-lg font-medium mb-8">
                     {event.status}
                   </span>
-
                   <h2 className="text-5xl font-bold text-white mb-6 font-display">
                     {event.title}
                   </h2>
-
                   <div className="flex items-center gap-8 text-gray-300 mb-8">
                     <div className="flex items-center gap-2">
                       <CalendarIcon className="w-6 h-6 text-purple-400" />
@@ -99,11 +96,9 @@ export default function EventsPage() {
                       <span>{event.venue}</span>
                     </div>
                   </div>
-
                   <p className="text-xl text-gray-300 mb-8 max-w-2xl">
                     {event.description}
                   </p>
-
                   <div className="grid grid-cols-2 gap-8 mb-12">
                     {event.highlights.map((highlight) => (
                       <div key={highlight} className="flex items-center gap-3">
@@ -112,7 +107,6 @@ export default function EventsPage() {
                       </div>
                     ))}
                   </div>
-
                   <button className="button text-lg px-8 py-4">
                     Register Now
                   </button>
@@ -121,7 +115,6 @@ export default function EventsPage() {
             </Link>
           ))}
         </div>
-
         {/* Past Seasons */}
         <div>
           <h2 className="text-4xl font-bold text-white mb-12 font-display">Previous Seasons</h2>
@@ -133,18 +126,16 @@ export default function EventsPage() {
                     <Image
                       src={event.image}
                       alt={event.title}
-                      layout="fill"
-                      objectFit="cover"
-                      className="group-hover:scale-105 transition-all duration-700"
+                      fill // Replaces layout="fill"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" // Add sizes prop
+                      className="group-hover:scale-105 transition-all duration-700 object-cover" // Use CSS for object-fit
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black" />
                   </div>
-
                   <div className="absolute inset-0 p-8 flex flex-col justify-end">
                     <h3 className="text-2xl font-bold text-white mb-4">
                       {event.title}
                     </h3>
-
                     <div className="grid grid-cols-2 gap-4 text-sm mb-4">
                       <div className="flex items-center gap-2 text-gray-300">
                         <CalendarIcon className="w-4 h-4 text-purple-400" />
@@ -155,7 +146,6 @@ export default function EventsPage() {
                         <span>{event.venue}</span>
                       </div>
                     </div>
-
                     <div className="flex items-center gap-2">
                       <TrophyIcon className="w-5 h-5 text-purple-400" />
                       <span className="text-white font-medium">{event.winner}</span>
