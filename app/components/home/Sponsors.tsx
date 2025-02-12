@@ -4,12 +4,12 @@ import Section from "../ui/Section";
 import Image from "next/image"; // Import Image from Next.js
 
 const sponsors = [
-  { name: "Company 1", url: "https://placeholder.co/200x80" },
-  { name: "Company 2", url: "https://placeholder.co/200x80" },
-  { name: "Company 3", url: "https://placeholder.co/200x80" },
-  { name: "Company 4", url: "https://placeholder.co/200x80" },
-  { name: "Company 5", url: "https://placeholder.co/200x80" },
-  { name: "Company 6", url: "https://placeholder.co/200x80" },
+  { name: "Company 1", url: "/images/logo.png" }, // Use local images for better reliability
+  { name: "Company 2", url: "/images/logo.png" },
+  { name: "Company 3", url: "/images/logo.png" },
+  { name: "Company 4", url: "/images/logo.png" },
+  { name: "Company 5", url: "/images/logo.png" },
+  { name: "Company 6", url: "/images/logo.png" },
 ];
 
 export default function Sponsors() {
@@ -27,7 +27,6 @@ export default function Sponsors() {
 
     const animate = () => {
       if (!scrollContainer) return;
-
       scrollPos += speed * direction;
       scrollContainer.scrollLeft = scrollPos;
 
@@ -37,12 +36,10 @@ export default function Sponsors() {
       } else if (scrollPos <= 0) {
         direction = 1;
       }
-
       requestAnimationFrame(animate);
     };
 
     const animationFrame = requestAnimationFrame(animate);
-
     return () => cancelAnimationFrame(animationFrame);
   }, []);
 
@@ -73,6 +70,9 @@ export default function Sponsors() {
                 width={200} // Specify width and height for the Image component
                 height={80}
                 loading="lazy" // Lazy load images for performance
+                onError={(e) => {
+                  e.currentTarget.src = "/images/default-logo.png"; // Fallback image
+                }}
               />
             </div>
           ))}
