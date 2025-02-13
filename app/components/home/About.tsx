@@ -8,7 +8,7 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card className="p-8 backdrop-blur-md group">
           <div className="mb-6">
-            <StarIcon className="w-12 h-12 text-purple-400 group-hover:scale-110 transition-transform" />
+            <StarIcon className="w-12 h-12 text-amber-400 group-hover:scale-110 transition-transform" />
           </div>
           <h3 className="text-2xl font-display font-bold text-white mb-4">Our Legacy</h3>
           <p className="text-gray-300 leading-relaxed mb-4">
@@ -26,19 +26,19 @@ export default function About() {
           <h3 className="text-2xl font-display font-bold text-white mb-4">Our Impact</h3>
           <ul className="space-y-3 text-gray-300">
             <li className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-purple-400" />
+              <div className="w-1.5 h-1.5 rounded-full bg-amber-400" />
               <span>Over 1000+ participants since inception</span>
             </li>
             <li className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-purple-400" />
+              <div className="w-1.5 h-1.5 rounded-full bg-amber-400" />
               <span>30+ successful professional artists launched</span>
             </li>
             <li className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-purple-400" />
+              <div className="w-1.5 h-1.5 rounded-full bg-amber-400" />
               <span>Partnerships with national media houses</span>
             </li>
             <li className="flex items-center gap-2">
-              <div className="w-1.5 h-1.5 rounded-full bg-purple-400" />
+              <div className="w-1.5 h-1.5 rounded-full bg-amber-400" />
               <span>Annual viewership of 100,000+</span>
             </li>
           </ul>

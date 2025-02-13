@@ -60,7 +60,7 @@ export default function Sponsors() {
           {[...sponsors, ...sponsors].map((sponsor, index) => (
             <div
               key={`${sponsor.name}-${index}`}
-              className="flex-shrink-0 w-48 h-24 bg-purple-900/30 rounded-lg border border-purple-500/20 backdrop-blur-sm p-4 flex items-center justify-center group hover:border-purple-500/40 transition-all duration-300"
+              className="flex-shrink-0 w-48 h-24 bg-amber-900/30 rounded-lg border border-amber-500/20 backdrop-blur-sm p-4 flex items-center justify-center group hover:border-amber-500/40 transition-all duration-300"
               role="listitem"
             >
               <Image

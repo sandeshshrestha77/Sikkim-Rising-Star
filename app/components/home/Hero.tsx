@@ -18,7 +18,7 @@ export default function Hero() {
           <p className="text-gray-300 text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed">
             Join Sikkim&apos;s biggest talent showcase and shine like never before.
             <br />
-            <span className="text-purple-300 font-semibold">Your moment starts here!</span>
+            <span className="text-amber-300 font-semibold">Your moment starts here!</span>
           </p>
 
           {/* Call-to-Action Button */}
@@ -26,7 +26,7 @@ export default function Hero() {
             <a
               href="/events"
               aria-label="Get started with Sikkim Rising Star"
-              className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-medium text-white bg-purple-600 hover:bg-purple-700 rounded-full transition-all duration-300 group shadow-lg"
+              className="inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg font-medium text-white bg-amber-600 hover:bg-amber-700 rounded-full transition-all duration-300 group shadow-lg"
             >
               Get Started Now
               <ArrowRightIcon className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />

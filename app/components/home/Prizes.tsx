@@ -47,16 +47,16 @@ export default function Prizes() {
           return (
             <Card key={prize.title} className="text-center">
               <div className="mb-6">
-                <Icon className="w-12 h-12 text-purple-400 mx-auto group-hover:scale-110 transition-transform" />
+                <Icon className="w-12 h-12 text-amber-400 mx-auto group-hover:scale-110 transition-transform" />
               </div>
               
               <h3 className="text-2xl font-display font-bold text-white mb-2">{prize.title}</h3>
-              <div className="text-3xl font-bold text-purple-500 mb-6">{prize.amount}</div>
+              <div className="text-3xl font-bold text-amber-500 mb-6">{prize.amount}</div>
               
               <ul className="space-y-3 text-left">
                 {prize.benefits.map((benefit) => (
                   <li key={benefit} className="flex items-center gap-2 text-gray-300">
-                    <div className="w-1.5 h-1.5 rounded-full bg-purple-400" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-amber-400" />
                     <span>{benefit}</span>
                   </li>
                 ))}

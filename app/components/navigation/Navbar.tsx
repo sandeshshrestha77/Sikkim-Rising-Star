@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-black/90 backdrop-blur-sm border-b border-white/10"
+          ? "bg-gradient-to-r from-amber-900/80 via-black/80 to-amber-900/80 backdrop-blur-md border-b border-amber-500/20"
           : "bg-transparent"
       }`}
     >
@@ -47,7 +47,7 @@ export default function Navbar() {
             </div>
             <Link
               href="/register"
-              className="button px-6 py-2 rounded-full bg-purple-600 text-white font-medium hover:bg-purple-700 transition-all duration-300"
+              className="button px-6 py-2 rounded-full bg-amber-600 text-white font-medium hover:bg-amber-700 transition-all duration-300"
             >
               Register Now
             </Link>
@@ -68,31 +68,37 @@ export default function Navbar() {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 space-y-2 border-t border-white/10">
-            <Link
-              href="/"
-              className="block py-2 text-gray-300 hover:text-white transition-colors"
-            >
-              Home
-            </Link>
-            <Link
-              href="/about"
-              className="block py-2 text-gray-300 hover:text-white transition-colors"
-            >
-              About
-            </Link>
-            <Link
-              href="/events"
-              className="block py-2 text-gray-300 hover:text-white transition-colors"
-            >
-              Events
-            </Link>
-            <Link
-              href="/register"
-              className="button block text-center mt-4 px-6 py-2 rounded-full bg-purple-600 text-white font-medium hover:bg-purple-700 transition-all duration-300"
-            >
-              Register Now
-            </Link>
+          <div className="md:hidden fixed inset-0 top-20 bg-black/95 backdrop-blur-lg border-t border-white/10">
+            <div className="flex flex-col items-center justify-center h-full space-y-8 pb-20">
+              <Link
+                href="/"
+                className="text-2xl text-gray-300 hover:text-amber-400 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                href="/about"
+                className="text-2xl text-gray-300 hover:text-amber-400 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                About
+              </Link>
+              <Link
+                href="/events"
+                className="text-2xl text-gray-300 hover:text-amber-400 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Events
+              </Link>
+              <Link
+                href="/register"
+                className="button text-xl px-8 py-3 rounded-full bg-amber-600 text-white font-medium hover:bg-amber-700 transition-all duration-300"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Register Now
+              </Link>
+            </div>
           </div>
         )}
       </div>

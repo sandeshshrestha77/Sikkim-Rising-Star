@@ -52,7 +52,7 @@ export default function HowItWorks() {
         {steps.map((step, index) => (
           <Card key={step.title} className="relative">
             <div className="absolute -top-4 -left-4 w-8 h-8 bg-purple-500/10 rounded-full flex items-center justify-center">
-              <span className="text-purple-400 font-bold">{index + 1}</span>
+              <span className="text-amber-400 font-bold">{index + 1}</span>
             </div>
             
             <h3 className="text-2xl font-display font-bold text-white mb-4">{step.title}</h3>
@@ -61,7 +61,7 @@ export default function HowItWorks() {
             <ul className="space-y-3">
               {step.details.map((detail) => (
                 <li key={detail} className="flex items-center gap-3">
-                  <CheckCircleIcon className="w-5 h-5 text-purple-400 shrink-0" />
+                  <CheckCircleIcon className="w-5 h-5 text-amber-400 shrink-0" />
                   <span className="text-gray-300">{detail}</span>
                 </li>
               ))}

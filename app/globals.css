@@ -18,9 +18,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .search-input {
-  @apply bg-black/40 border border-white/10 rounded-lg px-4 py-3 w-full text-white placeholder-gray-400 
-         focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500/20 
-         backdrop-blur-sm transition-all text-base;
+  @apply bg-black/40 border border-white/10 rounded-lg px-4 py-3.5 w-full text-white placeholder-gray-400 
+         focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/20 
+         backdrop-blur-sm transition-all duration-300 text-base hover:border-amber-500/30
+         shadow-sm hover:shadow-md hover:shadow-amber-500/10;
 }
 
 .nav-link {
@@ -34,16 +35,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-input {
-  @apply bg-gradient-to-r from-purple-900/30 to-purple-800/30 border border-purple-500/20 
+  @apply bg-gradient-to-r from-amber-900/30 to-amber-800/30 border border-amber-500/20 
          rounded-lg px-4 py-3 w-full text-white placeholder-gray-400 focus:outline-none 
-         focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500/40 backdrop-blur-sm 
+         focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500/40 backdrop-blur-sm 
          transition-all;
 }
 
 .nav-item {
   @apply relative px-4 py-2 text-gray-300 hover:text-white transition-colors 
          after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-0.5 
-         after:bg-purple-500 after:transition-all hover:after:w-full;
+         after:bg-amber-500 after:transition-all hover:after:w-full;
 }
 
 .section-title {
@@ -52,19 +53,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-title::after {
   content: '';
-  @apply absolute -bottom-4 left-0 w-16 h-1 bg-gradient-to-r from-purple-500/50 via-purple-400/50 to-purple-500/50;
+  @apply absolute -bottom-4 left-0 w-16 h-1 bg-gradient-to-r from-amber-500/50 via-amber-400/50 to-amber-500/50;
 }
 
 .gradient-border {
-  @apply border border-purple-500/20 hover:border-purple-500/40 transition-all;
+  @apply border border-amber-500/20 hover:border-amber-500/40 transition-all;
 }
 
 .gradient-bg {
-  @apply bg-gradient-to-br from-purple-900/50 via-purple-800/30 to-purple-900/50;
+  @apply bg-gradient-to-br from-amber-900/50 via-amber-800/30 to-amber-900/50;
 }
 
 .hover-effect {
-  @apply hover:scale-[1.02] transition-all duration-300 hover:shadow-purple-500/20;
+  @apply hover:scale-[1.02] transition-all duration-300 hover:shadow-amber-500/20;
 }
 
 @keyframes float {
@@ -92,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .gradient-text {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-400;
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-amber-500;
 }
 
 /* Add your custom styles below */

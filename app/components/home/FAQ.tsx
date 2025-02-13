@@ -52,16 +52,16 @@ export default function FAQ() {
       <div className="space-y-8">
         {categories.map((category) => (
           <div key={category.title}>
-            <h3 className="text-2xl font-bold text-white border-b-2 border-purple-500 pb-3 mb-4">{category.title}</h3>
+            <h3 className="text-2xl font-bold text-white border-b-2 border-amber-500 pb-3 mb-4">{category.title}</h3>
             {category.questions.map((faq) => (
               <Disclosure key={faq.question}>
                 {({ open }) => (
                   <div className="mb-4 group hover:scale-[1.01] transition-all duration-300">
-                    <Disclosure.Button className="w-full px-8 py-5 flex justify-between items-center bg-gradient-to-r from-purple-900/50 via-purple-800/50 to-purple-900/50 rounded-xl hover:from-purple-800/50 hover:via-purple-700/50 hover:to-purple-800/50 transition-all duration-300 shadow-lg hover:shadow-purple-500/20 backdrop-blur-sm">
-                      <span className="text-lg font-semibold text-white group-hover:text-purple-200 transition-colors">{faq.question}</span>
-                      <ChevronDownIcon className={`w-5 h-5 text-purple-400 transform transition-all duration-300 ${open ? 'rotate-180 text-purple-300' : ''}`} />
+                    <Disclosure.Button className="w-full px-8 py-5 flex justify-between items-center bg-gradient-to-r from-amber-900/50 via-amber-800/50 to-amber-900/50 rounded-xl hover:from-amber-800/50 hover:via-amber-700/50 hover:to-amber-800/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/20 backdrop-blur-sm">
+                      <span className="text-lg font-semibold text-white group-hover:text-amber-200 transition-colors">{faq.question}</span>
+                      <ChevronDownIcon className={`w-5 h-5 text-amber-400 transform transition-all duration-300 ${open ? 'rotate-180 text-amber-300' : ''}`} />
                     </Disclosure.Button>
-                    <Disclosure.Panel className="px-8 py-6 mt-2 bg-purple-900/30 rounded-xl text-gray-200 leading-relaxed border border-purple-500/20 backdrop-blur-sm">
+                    <Disclosure.Panel className="px-8 py-6 mt-2 bg-amber-900/30 rounded-xl text-gray-200 leading-relaxed border border-amber-500/20 backdrop-blur-sm">
                       {faq.answer}
                     </Disclosure.Panel>
                   </div>

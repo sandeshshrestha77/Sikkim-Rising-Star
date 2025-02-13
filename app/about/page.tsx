@@ -15,7 +15,7 @@ export default function AboutPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
         <div className="relative mb-24">
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-3xl blur-3xl" />
+          <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-yellow-500/20 rounded-3xl blur-3xl" />
           <div className="relative text-center py-16 px-4">
             <h1 className="text-6xl font-bold text-white mb-6 font-display">Discover Your Spotlight</h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
@@ -31,7 +31,7 @@ export default function AboutPage() {
               const Icon = stat.icon;
               return (
                 <Card key={stat.label} className="p-6 text-center group hover:scale-105 transition-all duration-300">
-                  <Icon className="w-8 h-8 text-purple-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
+                  <Icon className="w-8 h-8 text-amber-400 mx-auto mb-4 group-hover:scale-110 transition-transform" />
                   <div className="text-3xl font-bold text-white mb-2">{stat.value}</div>
                   <div className="text-gray-300">{stat.label}</div>
                 </Card>
@@ -56,7 +56,7 @@ export default function AboutPage() {
                   "Build industry connections"
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
-                    <CheckIcon className="w-5 h-5 text-purple-400 shrink-0 mt-1" />
+                    <CheckIcon className="w-5 h-5 text-amber-400 shrink-0 mt-1" />
                     <span className="text-gray-300">{item}</span>
                   </li>
                 ))}
@@ -72,7 +72,7 @@ export default function AboutPage() {
                   { title: "Innovation", desc: "Embracing new ideas and approaches in talent promotion" },
                   { title: "Community", desc: "Building a supportive network of artists and mentors" }
                 ].map((value) => (
-                  <div key={value.title} className="border-l-2 border-purple-500 pl-4">
+                  <div key={value.title} className="border-l-2 border-amber-500 pl-4">
                     <h4 className="text-lg font-bold text-white mb-1">{value.title}</h4>
                     <p className="text-gray-300">{value.desc}</p>
                   </div>
@@ -94,7 +94,7 @@ export default function AboutPage() {
               <Card key={milestone.year} className="p-6 hover:scale-[1.02] transition-transform">
                 <div className="flex items-start gap-6">
                   <div className="w-24 shrink-0">
-                    <div className="text-2xl font-bold text-purple-400">{milestone.year}</div>
+                    <div className="text-2xl font-bold text-amber-400">{milestone.year}</div>
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">{milestone.title}</h3>
@@ -116,7 +116,7 @@ export default function AboutPage() {
               <p>Phone: +91 XXXXX XXXXX</p>
               <p>Location: Gangtok, Sikkim</p>
             </div>
-            
+
           </Card>
         </Section>
       </div>

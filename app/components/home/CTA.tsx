@@ -8,14 +8,14 @@ import Link from "next/link";
 export default function CTA() {
   return (
     <section className="mb-24 relative">
-      <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-3xl blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-r from-amber-500/20 to-amber-600/20 rounded-3xl blur-3xl" />
       <div className="card p-12 relative overflow-hidden text-center">
         <div className="absolute top-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl" />
 
         <div className="relative">
           <div className="flex justify-center mb-6">
-            <SparklesIcon className="w-12 h-12 text-purple-400 animate-pulse" />
+            <SparklesIcon className="w-12 h-12 text-amber-400 animate-pulse" />
           </div>
 
           <h2 className="text-4xl font-display font-bold text-white mb-6">
