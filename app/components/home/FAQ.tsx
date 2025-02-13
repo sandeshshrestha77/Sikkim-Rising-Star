@@ -1,6 +1,7 @@
+
 "use client";
 
-import { Disclosure } from '@headlessui/react';
+import { Disclosure, Transition } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import Section from '../ui/Section';
 
@@ -49,25 +50,42 @@ const categories = [
 export default function FAQ() {
   return (
     <Section title="Frequently Asked Questions" className="mb-24">
-      <div className="space-y-8">
+      <div className="max-w-4xl mx-auto space-y-12">
         {categories.map((category) => (
-          <div key={category.title}>
-            <h3 className="text-2xl font-bold text-white border-b-2 border-amber-500 pb-3 mb-4">{category.title}</h3>
-            {category.questions.map((faq) => (
-              <Disclosure key={faq.question}>
-                {({ open }) => (
-                  <div className="mb-4 group hover:scale-[1.01] transition-all duration-300">
-                    <Disclosure.Button className="w-full px-8 py-5 flex justify-between items-center bg-gradient-to-r from-amber-900/50 via-amber-800/50 to-amber-900/50 rounded-xl hover:from-amber-800/50 hover:via-amber-700/50 hover:to-amber-800/50 transition-all duration-300 shadow-lg hover:shadow-amber-500/20 backdrop-blur-sm">
-                      <span className="text-lg font-semibold text-white group-hover:text-amber-200 transition-colors">{faq.question}</span>
-                      <ChevronDownIcon className={`w-5 h-5 text-amber-400 transform transition-all duration-300 ${open ? 'rotate-180 text-amber-300' : ''}`} />
-                    </Disclosure.Button>
-                    <Disclosure.Panel className="px-8 py-6 mt-2 bg-amber-900/30 rounded-xl text-gray-200 leading-relaxed border border-amber-500/20 backdrop-blur-sm">
-                      {faq.answer}
-                    </Disclosure.Panel>
-                  </div>
-                )}
-              </Disclosure>
-            ))}
+          <div key={category.title} className="space-y-6">
+            <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-400 mb-6">
+              {category.title}
+            </h3>
+            
+            <div className="space-y-4">
+              {category.questions.map((faq) => (
+                <Disclosure key={faq.question}>
+                  {({ open }) => (
+                    <div className="group">
+                      <Disclosure.Button className="w-full px-8 py-6 flex justify-between items-center bg-gradient-to-br from-amber-950/90 to-black rounded-xl border border-amber-500/20 hover:border-amber-500/40 transition-all duration-300 group-hover:shadow-lg group-hover:shadow-amber-500/5">
+                        <span className="text-lg font-medium text-white group-hover:text-amber-200 transition-colors text-left">
+                          {faq.question}
+                        </span>
+                        <ChevronDownIcon className={`w-6 h-6 text-amber-400 transform transition-all duration-300 ${open ? 'rotate-180 text-amber-300' : ''}`} />
+                      </Disclosure.Button>
+                      
+                      <Transition
+                        enter="transition duration-200 ease-out"
+                        enterFrom="transform scale-95 opacity-0"
+                        enterTo="transform scale-100 opacity-100"
+                        leave="transition duration-100 ease-out"
+                        leaveFrom="transform scale-100 opacity-100"
+                        leaveTo="transform scale-95 opacity-0"
+                      >
+                        <Disclosure.Panel className="px-8 py-6 mt-2 bg-gradient-to-br from-amber-950/50 to-black rounded-xl text-gray-300 leading-relaxed border border-amber-500/10">
+                          {faq.answer}
+                        </Disclosure.Panel>
+                      </Transition>
+                    </div>
+                  )}
+                </Disclosure>
+              ))}
+            </div>
           </div>
         ))}
       </div>

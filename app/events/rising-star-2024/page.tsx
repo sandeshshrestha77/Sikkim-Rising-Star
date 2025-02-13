@@ -26,8 +26,9 @@ export default function RisingStar2024() {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent">
             <div className="absolute bottom-0 left-0 right-0 p-12">
-              <div className="max-w-3xl mx-auto text-center">
-                <h1 className="text-6xl font-bold text-white mb-6 font-display tracking-tight">Don't Miss Out!</h1>
+              <div className="max-w-3xl mx-auto text-center"><h1 className="text-6xl font-bold text-white mb-6 font-display tracking-tight">
+  Don&apos;t Miss Out!
+</h1>
                 <h2 className="text-4xl font-bold text-amber-400 mb-4">{eventDetails.title}</h2>
                 <div className="flex flex-wrap justify-center gap-6 text-gray-300 mb-8">
                   <div className="flex items-center gap-2">

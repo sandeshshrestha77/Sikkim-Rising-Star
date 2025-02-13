@@ -80,7 +80,7 @@ const eventDetails = {
   ]
 };
 
-export default function RisingStar2022() {
+export default function RisingStar2021() {
   return (
     <main className="min-h-screen py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -194,9 +194,10 @@ export default function RisingStar2022() {
                     <Image
                       src={photo.url}
                       alt={photo.caption}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
                       width={800}
-                      height={256}
+                      height={500}
+                      style={{ width: '100%', height: '100%' }}
                     />
                     <div className="absolute bottom-4 left-4 text-white">{photo.caption}</div>
                   </div>

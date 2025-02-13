@@ -8,7 +8,7 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card className="p-8 backdrop-blur-md group">
           <div className="mb-6">
-            <StarIcon className="w-12 h-12 text-amber-400 group-hover:scale-110 transition-transform" />
+            <div className="text-4xl group-hover:scale-110 transition-transform">✨</div>
           </div>
           <h3 className="text-2xl font-display font-bold text-white mb-4">Our Legacy</h3>
           <p className="text-gray-300 leading-relaxed mb-4">
@@ -21,7 +21,7 @@ export default function About() {
         
         <Card className="p-8 backdrop-blur-md group">
           <div className="mb-6">
-            <div className="text-4xl group-hover:scale-110 transition-transform">🏆</div>
+            <div className="text-4xl group-hover:scale-110 transition-transform">🌟</div>
           </div>
           <h3 className="text-2xl font-display font-bold text-white mb-4">Our Impact</h3>
           <ul className="space-y-3 text-gray-300">

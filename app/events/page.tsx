@@ -4,6 +4,11 @@ import Card from '../components/ui/Card';
 import Link from 'next/link';
 import Image from 'next/image';
 
+export const metadata = {
+  title: 'Events | Sikkim Rising Star',
+  description: 'Discover past and upcoming talent hunt competitions in Sikkim',
+};
+
 export default function EventsPage() {
   const events = [
     {
@@ -58,7 +63,7 @@ export default function EventsPage() {
         <div className="grid grid-cols-1 gap-8">
           {upcomingEvents.map((event) => (
             <Link href={event.link} key={event.year}>
-              <Card className="group hover:border-amber-500/50 transition-all duration-300 bg-gradient-to-br from-amber-950/80 via-black to-black border-amber-500/30 hover:shadow-xl hover:shadow-amber-500/20 scale-[1.02]">
+              <Card className="group hover:border-amber-500/50 transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-amber-950/80 via-black to-black border-amber-500/30 hover:shadow-xl hover:shadow-amber-500/20 scale-[1.02]">
                 <div className="flex flex-col md:flex-row gap-6">
                   <div className="relative w-full md:w-2/5 h-[300px] rounded-lg overflow-hidden">
                     <Image

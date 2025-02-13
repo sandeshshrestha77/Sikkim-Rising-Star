@@ -96,11 +96,13 @@ export default function RisingStar2022() {
           <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent">
             <div className="absolute bottom-0 left-0 right-0 p-12">
               <div className="max-w-7xl mx-auto">
-            <h1 className="text-5xl font-bold text-white mb-4 font-display tracking-tight">{eventDetails.title}</h1>
-            <div className="flex items-center gap-4 text-gray-300">
-              <span>{eventDetails.date}</span>
-              <span>•</span>
-              <span>{eventDetails.venue}</span>
+                <h1 className="text-5xl font-bold text-white mb-4 font-display tracking-tight">{eventDetails.title}</h1>
+                <div className="flex items-center gap-4 text-gray-300">
+                  <span>{eventDetails.date}</span>
+                  <span>•</span>
+                  <span>{eventDetails.venue}</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
