@@ -84,15 +84,18 @@ export default function RisingStar2022() {
     <main className="min-h-screen py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Hero Section */}
-        <div className="relative h-96 rounded-2xl overflow-hidden mb-16">
+        <div className="relative w-full h-[70vh] mb-16">
           <Image
             src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=2070"
             alt="Rising Star 2022"
-            layout="fill"
-            objectFit="cover"
+            className="object-cover"
+            fill
             priority
+            sizes="100vw"
           />
-          <div className="absolute bottom-0 left-0 right-0 p-8">
+          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent">
+            <div className="absolute bottom-0 left-0 right-0 p-12">
+              <div className="max-w-7xl mx-auto">
             <h1 className="text-5xl font-bold text-white mb-4 font-display tracking-tight">{eventDetails.title}</h1>
             <div className="flex items-center gap-4 text-gray-300">
               <span>{eventDetails.date}</span>
@@ -107,9 +110,9 @@ export default function RisingStar2022() {
           <section>
             <h2 className="text-3xl font-bold text-white mb-8 font-display relative inline-block">
               <span>Event Overview</span>
-              <div className="absolute -bottom-2 left-0 w-12 h-1 bg-purple-500/50" />
+              <div className="absolute -bottom-2 left-0 w-12 h-1 bg-amber-500/50" />
             </h2>
-            
+
             <Card className="p-8">
               <p className="text-gray-300 leading-relaxed mb-8">{eventDetails.description}</p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -127,31 +130,31 @@ export default function RisingStar2022() {
           <section>
             <h2 className="text-3xl font-bold text-white mb-8 font-display relative inline-block">
               <span>Winners</span>
-              <div className="absolute -bottom-2 left-0 w-12 h-1 bg-purple-500/50" />
+              <div className="absolute -bottom-2 left-0 w-12 h-1 bg-amber-500/50" />
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {eventDetails.winners.map((winner) => (
                 <Card key={winner.name} className="p-6 group">
                   <div className="flex items-start justify-between mb-6">
-                    <TrophyIcon className="w-8 h-8 text-purple-400" />
+                    <TrophyIcon className="w-8 h-8 text-amber-400" />
                     <span className="gradient-text font-display font-bold">{winner.position}</span>
                   </div>
-                  
+
                   <div className="mb-6">
                     <Image
                       src={winner.image}
                       alt={winner.name}
                       width={96}
                       height={96}
-                      className="rounded-full border-2 border-purple-500/20 object-cover"
+                      className="rounded-full border-2 border-amber-500/20 object-cover"
                     />
                   </div>
-                  
-                  <h3 className="text-xl font-display font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
+
+                  <h3 className="text-xl font-display font-bold text-white mb-2 group-hover:text-amber-400 transition-colors">
                     {winner.name}
                   </h3>
-                  <div className="text-purple-400 text-sm font-medium mb-2">{winner.category}</div>
+                  <div className="text-amber-400 text-sm font-medium mb-2">{winner.category}</div>
                   <div className="text-lg font-bold gradient-text mb-3">{winner.prize}</div>
                   <p className="text-gray-300 text-sm">{winner.achievement}</p>
                 </Card>
@@ -163,14 +166,14 @@ export default function RisingStar2022() {
           <section>
             <h2 className="text-3xl font-bold text-white mb-8 font-display relative inline-block">
               <span>Event Highlights</span>
-              <div className="absolute -bottom-2 left-0 w-12 h-1 bg-purple-500/50" />
+              <div className="absolute -bottom-2 left-0 w-12 h-1 bg-amber-500/50" />
             </h2>
-            
+
             <Card className="p-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {eventDetails.highlights.map((highlight) => (
                   <div key={highlight} className="flex items-center gap-3">
-                    <div className="w-1.5 h-1.5 rounded-full bg-purple-400" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-amber-400" />
                     <span className="text-gray-300">{highlight}</span>
                   </div>
                 ))}
@@ -182,9 +185,9 @@ export default function RisingStar2022() {
           <section>
             <h2 className="text-3xl font-bold text-white mb-8 font-display relative inline-block">
               <span>Photo Gallery</span>
-              <div className="absolute -bottom-2 left-0 w-12 h-1 bg-purple-500/50" />
+              <div className="absolute -bottom-2 left-0 w-12 h-1 bg-amber-500/50" />
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {eventDetails.gallery.map((photo) => (
                 <Card key={photo.url} className="overflow-hidden group">
@@ -207,14 +210,14 @@ export default function RisingStar2022() {
           <section>
             <h2 className="text-3xl font-bold text-white mb-8 font-display relative inline-block">
               <span>Media Coverage</span>
-              <div className="absolute -bottom-2 left-0 w-12 h-1 bg-purple-500/50" />
+              <div className="absolute -bottom-2 left-0 w-12 h-1 bg-amber-500/50" />
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {eventDetails.mediaHighlights.map((media) => (
                 <Card key={media.title} className="p-6">
                   <div className="flex items-start gap-4">
-                    <NewspaperIcon className="w-8 h-8 text-purple-400 shrink-0" />
+                    <NewspaperIcon className="w-8 h-8 text-amber-400 shrink-0" />
                     <div>
                       <h3 className="text-lg font-bold text-white mb-2">{media.title}</h3>
                       <div className="text-sm text-gray-300">
